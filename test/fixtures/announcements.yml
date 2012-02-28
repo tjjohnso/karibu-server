@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  announcer_id: 1
+  overview: MyString
+  details: MyText
+  range: 1.5
+
+two:
+  announcer_id: 1
+  overview: MyString
+  details: MyText
+  range: 1.5

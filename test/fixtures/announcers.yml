@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  street: MyString
+  city: MyString
+  country: MyString
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  name: MyString
+  street: MyString
+  city: MyString
+  country: MyString
+  longitude: 1.5
+  latitude: 1.5
