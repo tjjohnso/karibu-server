@@ -6,6 +6,11 @@
     <th>Overview</th>
     <th>Details</th>
     <th>Range</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +18,15 @@
 
 <% @announcements.each do |announcement| %>
   <tr>
-    <td><%= announcement.announcer_id %></td>
+    <td><%= announcement.announcer.nil? ? "" : announcement.announcer.name %></td>
     <td><%= announcement.overview %></td>
     <td><%= announcement.details %></td>
     <td><%= announcement.range %></td>
+    <td><%= announcement.street %></td>
+    <td><%= announcement.city %></td>
+    <td><%= announcement.country %></td>
+    <td><%= announcement.longitude %></td>
+    <td><%= announcement.latitude %></td>
     <td><%= link_to 'Show', announcement %></td>
     <td><%= link_to 'Edit', edit_announcement_path(announcement) %></td>
     <td><%= link_to 'Destroy', announcement, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -27,3 +37,4 @@
 <br />
 
 <%= link_to 'New Announcement', new_announcement_path %>
+<%= gmaps4rails(@json) %>

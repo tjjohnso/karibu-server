@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120228045208) do
+ActiveRecord::Schema.define(:version => 20120228230300) do
 
   create_table "announcements", :force => true do |t|
     t.integer  "announcer_id"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(:version => 20120228045208) do
     t.float    "range"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "street"
+    t.string   "city"
+    t.string   "country"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.boolean  "gmaps"
+    t.string   "zip"
+    t.string   "state"
   end
 
   create_table "announcers", :force => true do |t|
@@ -30,6 +38,9 @@ ActiveRecord::Schema.define(:version => 20120228045208) do
     t.float    "latitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "gmaps"
+    t.string   "zip"
+    t.string   "state"
   end
 
 end

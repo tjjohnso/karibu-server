@@ -7,6 +7,9 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3', '1.3.3', :group => :development
 gem 'jquery-rails', '~> 1.0.13'
+gem 'gmaps4rails'
+gem 'geokit-rails3'
+#gem 'rack-ssl', :require => 'rack/ssl'
 
 # Use unicorn as the web server
 # gem 'unicorn'

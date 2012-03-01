@@ -2,12 +2,13 @@ class AnnouncementsController < ApplicationController
   # GET /announcements
   # GET /announcements.xml
   def index
-    @announcements = Announcement.all
+    @announcements = Announcement.search(params)
+    @json = @announcements.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @announcements }
-      format.json  { render :json => @announcements }
+      format.json  { render :json => @announcements.to_json(:include => :announcer) }
     end
   end
 

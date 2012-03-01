@@ -3,6 +3,7 @@ class AnnouncersController < ApplicationController
   # GET /announcers.xml
   def index
     @announcers = Announcer.all
+    @json = @announcers.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb

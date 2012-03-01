@@ -20,6 +20,31 @@
   <%= @announcement.range %>
 </p>
 
+<p>
+  <b>Street:</b>
+  <%= @announcement.street %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @announcement.city %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @announcement.country %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @announcement.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @announcement.latitude %>
+</p>
+
 
 <%= link_to 'Edit', edit_announcement_path(@announcement) %> |
 <%= link_to 'Back', announcements_path %>
