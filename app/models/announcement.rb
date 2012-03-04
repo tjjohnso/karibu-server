@@ -1,6 +1,8 @@
 class Announcement < ActiveRecord::Base
 
   belongs_to :announcer
+  has_many :categories, :through => :categorizations
+  has_many :categorizations
 
   acts_as_gmappable
   acts_as_mappable :default_units => :kms,

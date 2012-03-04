@@ -1,4 +1,14 @@
 MobileProject::Application.routes.draw do
+  #get "categories/new"
+  #
+  #get "categories/index"
+  #
+  #get "categories/edit"
+  #
+  #get "categories/show"
+
+  resources :categories
+
   resources :announcers
 
   resources :announcements

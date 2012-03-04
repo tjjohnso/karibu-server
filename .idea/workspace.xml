@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bafff9-6fd6-4230-8ba6-1385be440280" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/certs/server.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/certs/server.csr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/certs/server.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20120228052456_add_location_to_announcement.rb" />
       <change type="DELETED" beforePath="C:\Users\TrentonJ\rails_projects\MobileProject\public\javascripts\controls.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\TrentonJ\rails_projects\MobileProject\public\javascripts\dragdrop.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\TrentonJ\rails_projects\MobileProject\public\javascripts\effects.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\TrentonJ\rails_projects\MobileProject\public\javascripts\prototype.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\TrentonJ\rails_projects\MobileProject\public\javascripts\rails.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MobileProject.iml" afterPath="$PROJECT_DIR$/.idea/MobileProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/announcements_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/announcements_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/announcers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/announcers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/announcement.rb" afterPath="$PROJECT_DIR$/app/models/announcement.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/announcer.rb" afterPath="$PROJECT_DIR$/app/models/announcer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/announcements/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/announcements/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/announcements/index.html.erb" afterPath="$PROJECT_DIR$/app/views/announcements/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/announcements/show.html.erb" afterPath="$PROJECT_DIR$/app/views/announcements/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/announcers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/announcers/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/rails" afterPath="$PROJECT_DIR$/script/rails" />
     </list>
     <ignored path="MobileProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,25 +36,16 @@
       <file leaf-file-name="announcements_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/announcements_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="35" selection-start="76" selection-end="76" vertical-scroll-proportion="0.028911564">
+            <state line="10" column="96" selection-start="418" selection-end="418" vertical-scroll-proportion="0.28911564">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="announcement.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/announcement.rb">
+      <file leaf-file-name="categories_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rails" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/rails">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="114" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+            <state line="9" column="48" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,20 +65,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/announcers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/announcers/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/announcements/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/announcements/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/announcer.rb" />
         <option value="$PROJECT_DIR$/app/views/announcements/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/announcement.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/script/rails" />
+        <option value="$PROJECT_DIR$/app/models/announcement.rb" />
+        <option value="$PROJECT_DIR$/app/models/category.rb" />
+        <option value="$PROJECT_DIR$/app/models/categorization.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/announcements_controller.rb" />
       </list>
     </option>
@@ -214,6 +188,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="categories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,51 +566,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/announcements/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="549" selection-end="549" vertical-scroll-proportion="1.3309609">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/announcers/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="337" selection-end="337" vertical-scroll-proportion="0.27224198">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/announcements/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="462" selection-end="462" vertical-scroll-proportion="0.45373666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/announcer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="49" selection-start="307" selection-end="307" vertical-scroll-proportion="0.23129252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/announcements/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="286" selection-end="286" vertical-scroll-proportion="0.5142349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="32" selection-start="75" selection-end="75" vertical-scroll-proportion="0.028911564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/announcers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -632,16 +622,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="35" selection-start="415" selection-end="415" vertical-scroll-proportion="0.5142349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="38" selection-start="203" selection-end="203" vertical-scroll-proportion="0.3180272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/categorization.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="91" selection-end="91" vertical-scroll-proportion="0.05782313">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="119" selection-end="119" vertical-scroll-proportion="0.05782313">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/announcement.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+        <state line="6" column="22" selection-start="166" selection-end="166" vertical-scroll-proportion="0.1773913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/announcers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="138" selection-end="138" vertical-scroll-proportion="0.028911564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="48" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/announcements_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="35" selection-start="76" selection-end="76" vertical-scroll-proportion="0.028911564">
+        <state line="10" column="96" selection-start="418" selection-end="418" vertical-scroll-proportion="0.28911564">
           <folding />
         </state>
       </provider>

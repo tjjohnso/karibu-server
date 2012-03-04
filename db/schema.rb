@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120228230300) do
+ActiveRecord::Schema.define(:version => 20120304004527) do
 
   create_table "announcements", :force => true do |t|
     t.integer  "announcer_id"
@@ -41,6 +41,19 @@ ActiveRecord::Schema.define(:version => 20120228230300) do
     t.boolean  "gmaps"
     t.string   "zip"
     t.string   "state"
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categorizations", :force => true do |t|
+    t.integer  "announcement_id"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
