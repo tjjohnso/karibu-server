@@ -4,7 +4,26 @@ class Announcement < ActiveRecord::Base
   has_many :categories, :through => :categorizations
   has_many :categorizations
 
-  acts_as_gmappable
+  # TODO:
+  # Figure out a way to simply ignore properties that aren't recognized when creating an object.
+  # Test to make sure object was created.
+  # change package name to com.karibu instead of org.karibu
+  # Add start and expiration date to model
+  # On client side, I, at some point, remove a few properties from the announcement project before sending the JSON
+  #   over to the server side for creation (or updating). Put that list of to-be-removed properties in an array at the
+  #   top of the file and just cycle through the properties to remove them from the JSON.
+  # Maybe the 406 Not Acceptable came about because the controller didn't respond to json.
+  # When querying for announcements, return the categories from the query so you don't have to make several queries.
+  # On client side, handle when no data comes back from server.
+  # Validate parameters, especially longitude and latitude.
+  # Remove unneeded attributes from JSON sent to server like announcer.
+  # Figure out how to not do geocoding if the longitude and latitude values are present.
+  # Figure out how to force geocoding on update if address changes. But maybe we won't want to do that. We'll see.
+  # On client side, be able to handle when the response from saving or updating an announcement is not 200 OK. I think
+  #   gmaps4rails sends back 406 when the announcement address is not valid.
+
+  before_save :geocode_address
+  acts_as_gmappable :process_geocoding => false
   acts_as_mappable :default_units => :kms,
                    :default_formula => :sphere,
                    :distance_field_name => :distance,
@@ -13,6 +32,10 @@ class Announcement < ActiveRecord::Base
 
   def gmaps4rails_address
   #describe how to retrieve the address from your model, if you use directly a db column, you can dry your code, see wiki
+    address
+  end
+
+  def address
     "#{self.street}, #{self.city}, #{self.country}"
   end
 
@@ -67,6 +90,20 @@ class Announcement < ActiveRecord::Base
     #long_min = long + Math.atan2(Math.sin(bearing)*Math.sin(distance/earth_radius)*Math.cos(lat), Math.cos(distance/earth_radius)-Math.sin(lat)*Math.sin(lat_min))
 
     {:long_min => long_min, :long_max => long_max}
+  end
+
+  private
+
+  def geocode_address
+    if !(self.longitude.nil? or self.latitude.nil?) # If both the latitude and longitude are present, perform geocode
+      begin
+        data = Gmaps4rails.geocode(address).first
+        self.latitude= data[:lat]
+        self.longitude= data[:lng]
+      rescue Gmaps4rails::GeocodeStatus
+        puts "trying to rescue"
+      end
+    end
   end
 
 end

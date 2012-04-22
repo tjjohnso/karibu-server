@@ -8,7 +8,7 @@ class AnnouncementsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @announcements }
-      format.json  { render :json => @announcements.to_json(:include => [:announcer, :categories]) }
+      format.json { render :json => @announcements.to_json( :include => [:announcer, :categories]) }
     end
   end
 
@@ -20,6 +20,7 @@ class AnnouncementsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @announcement }
+      format.json { render :json => @announcement.to_json( :include => [:announcer, :categories]) }
     end
   end
 
@@ -43,14 +44,17 @@ class AnnouncementsController < ApplicationController
   # POST /announcements.xml
   def create
     @announcement = Announcement.new(params[:announcement])
-
+    puts "The announcement is #{@announcement.inspect}"
+    puts "Your params are #{params}"
     respond_to do |format|
       if @announcement.save
         format.html { redirect_to(@announcement, :notice => 'Announcement was successfully created.') }
         format.xml  { render :xml => @announcement, :status => :created, :location => @announcement }
+        format.json { render :json => @announcement.to_json( :include => [:announcer, :categories]), :status => :created, :location => @announcement }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @announcement.errors, :status => :unprocessable_entity }
+        format.json { render :xml => @announcement.errors, :status => :unprocessable_entity }
       end
     end
   end
